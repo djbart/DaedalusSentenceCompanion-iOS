@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="seI-qX-xYs">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Daedalus Sentence-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewControllerMain" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIK-H0-Wnf">
+                                <rect key="frame" x="16" y="72" width="568" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="grU-1i-aZV">
+                                <rect key="frame" x="535" y="112" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use game time limit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZd-NR-FIS">
+                                <rect key="frame" x="16" y="117" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minimumValue="20" maximumValue="120" stepValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="j20-nS-GQc">
+                                <rect key="frame" x="490" y="146" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ga8-4N-RVm"/>
+                                </connections>
+                            </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtE-kB-2IF">
+                                <rect key="frame" x="16" y="183" width="568" height="30"/>
+                                <state key="normal" title="Start game"/>
+                                <connections>
+                                    <segue destination="a2V-4P-dFZ" kind="show" id="V1k-kH-Ozd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Limit:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCp-mu-dcU">
+                                <rect key="frame" x="16" y="150" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60 minutes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cey-gU-Bw2">
+                                <rect key="frame" x="258" y="150" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XZd-NR-FIS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3Re-Ig-R3r"/>
+                            <constraint firstItem="grU-1i-aZV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5Ds-i5-NnK"/>
+                            <constraint firstItem="Cey-gU-Bw2" firstAttribute="top" secondItem="hIK-H0-Wnf" secondAttribute="bottom" constant="46" id="8bF-WN-iM2"/>
+                            <constraint firstAttribute="centerX" secondItem="TtE-kB-2IF" secondAttribute="centerX" id="HcS-Rs-G6T"/>
+                            <constraint firstItem="XZd-NR-FIS" firstAttribute="top" secondItem="hIK-H0-Wnf" secondAttribute="bottom" constant="13" id="LPj-8Z-lbE"/>
+                            <constraint firstItem="j20-nS-GQc" firstAttribute="top" secondItem="XZd-NR-FIS" secondAttribute="bottom" constant="8" id="MbI-YH-jUG"/>
+                            <constraint firstAttribute="centerX" secondItem="Cey-gU-Bw2" secondAttribute="centerX" id="Na3-Sy-W1S"/>
+                            <constraint firstItem="gCp-mu-dcU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QrH-2y-EGK"/>
+                            <constraint firstItem="gCp-mu-dcU" firstAttribute="top" secondItem="XZd-NR-FIS" secondAttribute="bottom" constant="12" id="SXp-pM-zPi"/>
+                            <constraint firstAttribute="centerX" secondItem="hIK-H0-Wnf" secondAttribute="centerX" id="UDL-am-uJw"/>
+                            <constraint firstItem="hIK-H0-Wnf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XQO-dJ-rG2"/>
+                            <constraint firstItem="TtE-kB-2IF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Y8S-V2-k2m"/>
+                            <constraint firstItem="TtE-kB-2IF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aWP-hp-OYq"/>
+                            <constraint firstItem="grU-1i-aZV" firstAttribute="top" secondItem="hIK-H0-Wnf" secondAttribute="bottom" constant="8" id="bg9-iR-LKQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j20-nS-GQc" secondAttribute="trailing" id="dMg-9U-KAK"/>
+                            <constraint firstItem="TtE-kB-2IF" firstAttribute="top" secondItem="j20-nS-GQc" secondAttribute="bottom" constant="8" id="kWE-5D-g9P"/>
+                            <constraint firstItem="hIK-H0-Wnf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="mxX-gy-oWP"/>
+                            <constraint firstItem="hIK-H0-Wnf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="y0u-bl-h1o"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Daedalus Sentence" id="bOf-1t-3w8">
+                        <barButtonItem key="rightBarButtonItem" title="Start" id="omb-4V-1Ma">
+                            <connections>
+                                <segue destination="a2V-4P-dFZ" kind="show" id="8Hw-PR-cCw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="stepperOutlet" destination="j20-nS-GQc" id="XFK-Jj-PBC"/>
+                        <outlet property="stepperValueLabel" destination="Cey-gU-Bw2" id="TwO-fD-rXO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="438"/>
+        </scene>
+        <!--View Controller Game-->
+        <scene sceneID="9vn-ra-an7">
+            <objects>
+                <viewController id="a2V-4P-dFZ" customClass="ViewControllerGame" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DoB-Dk-yly"/>
+                        <viewControllerLayoutGuide type="bottom" id="IdI-sO-260"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v7F-KJ-44N">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euB-TB-KWN">
+                                <rect key="frame" x="16" y="72" width="568" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="euB-TB-KWN" firstAttribute="leading" secondItem="v7F-KJ-44N" secondAttribute="leadingMargin" id="7iz-bF-VDQ"/>
+                            <constraint firstItem="euB-TB-KWN" firstAttribute="trailing" secondItem="v7F-KJ-44N" secondAttribute="trailingMargin" id="8uB-eY-Q8Y"/>
+                            <constraint firstItem="euB-TB-KWN" firstAttribute="top" secondItem="DoB-Dk-yly" secondAttribute="bottom" constant="8" id="Gct-Rr-iSv"/>
+                            <constraint firstAttribute="centerX" secondItem="euB-TB-KWN" secondAttribute="centerX" id="JLd-OP-GWh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameTimerLabel" destination="euB-TB-KWN" id="0aQ-9N-2u0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5h-DX-qWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771" y="438"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Gb-qp-riT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="seI-qX-xYs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EAP-Vg-nwb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jaT-2X-eDW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iJg-BA-4Ed" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="438"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="V1k-kH-Ozd"/>
+    </inferredMetricsTieBreakers>
+</document>
