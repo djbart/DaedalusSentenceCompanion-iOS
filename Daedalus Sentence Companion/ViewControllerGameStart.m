@@ -1,22 +1,14 @@
 //
-//  ViewController.m
+//  ViewControllerGameStart.m
 //  Daedalus Sentence Companion
 //
 //  Created by Bart Waeterschoot on 02/05/15.
 //  Copyright (c) 2015 Cripplefish Games. All rights reserved.
 //
 
-#import "ViewControllerMain.h"
+#import "ViewControllerGameStart.h"
 
-@interface ViewControllerMain ()
-
-@property (weak, nonatomic) IBOutlet UILabel *stepperValueLabel;
-@property (weak, nonatomic) IBOutlet UIStepper *stepperOutlet;
-- (IBAction)stepperAction:(id)sender;
-
-@end
-
-@implementation ViewControllerMain
+@implementation ViewControllerGameStart
 
 @synthesize stepperOutlet, stepperValueLabel;
 
@@ -32,7 +24,7 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    ViewControllerGame *vcg = [segue destinationViewController];
+    ViewControllerRoundStart *vcg = [segue destinationViewController];
     
     vcg.gameTimerValue = stepperOutlet.value;
 }

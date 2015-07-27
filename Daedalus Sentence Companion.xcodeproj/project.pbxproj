@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC6AB6751B60268500F701E6 /* ViewControllerGame.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6AB6741B60268500F701E6 /* ViewControllerGame.m */; };
+		CC6AB6751B60268500F701E6 /* ViewControllerRoundStart.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6AB6741B60268500F701E6 /* ViewControllerRoundStart.m */; };
 		CCA3107B1AF5527600ED21DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA3107A1AF5527600ED21DE /* main.m */; };
 		CCA3107E1AF5527600ED21DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA3107D1AF5527600ED21DE /* AppDelegate.m */; };
-		CCA310811AF5527600ED21DE /* ViewControllerMain.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA310801AF5527600ED21DE /* ViewControllerMain.m */; };
+		CCA310811AF5527600ED21DE /* ViewControllerGameStart.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA310801AF5527600ED21DE /* ViewControllerGameStart.m */; };
 		CCA310841AF5527600ED21DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA310821AF5527600ED21DE /* Main.storyboard */; };
 		CCA310861AF5527600ED21DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA310851AF5527600ED21DE /* Images.xcassets */; };
 		CCA310891AF5527600ED21DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA310871AF5527600ED21DE /* LaunchScreen.xib */; };
@@ -28,15 +28,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CC6AB6731B60266300F701E6 /* ViewControllerGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerGame.h; sourceTree = "<group>"; };
-		CC6AB6741B60268500F701E6 /* ViewControllerGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerGame.m; sourceTree = "<group>"; };
+		CC6AB6731B60266300F701E6 /* ViewControllerRoundStart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRoundStart.h; sourceTree = "<group>"; };
+		CC6AB6741B60268500F701E6 /* ViewControllerRoundStart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRoundStart.m; sourceTree = "<group>"; };
 		CCA310751AF5527600ED21DE /* Daedalus Sentence Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daedalus Sentence Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA310791AF5527600ED21DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCA3107A1AF5527600ED21DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCA3107C1AF5527600ED21DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CCA3107D1AF5527600ED21DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CCA3107F1AF5527600ED21DE /* ViewControllerMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerMain.h; sourceTree = "<group>"; };
-		CCA310801AF5527600ED21DE /* ViewControllerMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMain.m; sourceTree = "<group>"; };
+		CCA3107F1AF5527600ED21DE /* ViewControllerGameStart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerGameStart.h; sourceTree = "<group>"; };
+		CCA310801AF5527600ED21DE /* ViewControllerGameStart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerGameStart.m; sourceTree = "<group>"; };
 		CCA310831AF5527600ED21DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCA310851AF5527600ED21DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CCA310881AF5527600ED21DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -86,14 +86,14 @@
 			children = (
 				CCA3107C1AF5527600ED21DE /* AppDelegate.h */,
 				CCA3107D1AF5527600ED21DE /* AppDelegate.m */,
-				CCA3107F1AF5527600ED21DE /* ViewControllerMain.h */,
-				CCA310801AF5527600ED21DE /* ViewControllerMain.m */,
+				CCA3107F1AF5527600ED21DE /* ViewControllerGameStart.h */,
+				CCA310801AF5527600ED21DE /* ViewControllerGameStart.m */,
 				CCA310821AF5527600ED21DE /* Main.storyboard */,
 				CCA310851AF5527600ED21DE /* Images.xcassets */,
 				CCA310871AF5527600ED21DE /* LaunchScreen.xib */,
 				CCA310781AF5527600ED21DE /* Supporting Files */,
-				CC6AB6731B60266300F701E6 /* ViewControllerGame.h */,
-				CC6AB6741B60268500F701E6 /* ViewControllerGame.m */,
+				CC6AB6731B60266300F701E6 /* ViewControllerRoundStart.h */,
+				CC6AB6741B60268500F701E6 /* ViewControllerRoundStart.m */,
 			);
 			path = "Daedalus Sentence Companion";
 			sourceTree = "<group>";
@@ -224,8 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC6AB6751B60268500F701E6 /* ViewControllerGame.m in Sources */,
-				CCA310811AF5527600ED21DE /* ViewControllerMain.m in Sources */,
+				CC6AB6751B60268500F701E6 /* ViewControllerRoundStart.m in Sources */,
+				CCA310811AF5527600ED21DE /* ViewControllerGameStart.m in Sources */,
 				CCA3107E1AF5527600ED21DE /* AppDelegate.m in Sources */,
 				CCA3107B1AF5527600ED21DE /* main.m in Sources */,
 			);

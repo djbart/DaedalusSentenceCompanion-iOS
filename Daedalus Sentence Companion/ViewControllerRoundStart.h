@@ -1,5 +1,5 @@
 //
-//  ViewControllerGame.h
+//  ViewControllerRoundStart.h
 //  Daedalus Sentence Companion
 //
 //  Created by Bart Waeterschoot on 22/07/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewControllerGame : UIViewController
+@interface ViewControllerRoundStart : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *gameTimerLabel;
 @property double gameTimerValue;

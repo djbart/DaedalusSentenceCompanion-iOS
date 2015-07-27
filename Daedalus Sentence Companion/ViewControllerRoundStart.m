@@ -1,18 +1,14 @@
 //
-//  ViewControllerGame.m
+//  ViewControllerRoundStart.m
 //  Daedalus Sentence Companion
 //
 //  Created by Bart Waeterschoot on 22/07/15.
 //  Copyright (c) 2015 Cripplefish Games. All rights reserved.
 //
 
-#import "ViewControllerGame.h"
+#import "ViewControllerRoundStart.h"
 
-@interface ViewControllerGame ()
-
-@end
-
-@implementation ViewControllerGame
+@implementation ViewControllerRoundStart
 
 - (void) viewDidLoad
 {
