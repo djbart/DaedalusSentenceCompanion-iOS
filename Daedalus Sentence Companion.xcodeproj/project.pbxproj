@@ -15,6 +15,7 @@
 		CCA310861AF5527600ED21DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA310851AF5527600ED21DE /* Images.xcassets */; };
 		CCA310891AF5527600ED21DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA310871AF5527600ED21DE /* LaunchScreen.xib */; };
 		CCA310951AF5527600ED21DE /* Daedalus_Sentence_CompanionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA310941AF5527600ED21DE /* Daedalus_Sentence_CompanionTests.m */; };
+		CCB67BBB1B6B94760001F289 /* ViewControllerRound.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB67BBA1B6B94760001F289 /* ViewControllerRound.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		CCA3108E1AF5527600ED21DE /* Daedalus Sentence CompanionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daedalus Sentence CompanionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA310931AF5527600ED21DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCA310941AF5527600ED21DE /* Daedalus_Sentence_CompanionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Daedalus_Sentence_CompanionTests.m; sourceTree = "<group>"; };
+		CCB67BB91B6B94760001F289 /* ViewControllerRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRound.h; sourceTree = "<group>"; };
+		CCB67BBA1B6B94760001F289 /* ViewControllerRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRound.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				CCA310781AF5527600ED21DE /* Supporting Files */,
 				CC6AB6731B60266300F701E6 /* ViewControllerRoundStart.h */,
 				CC6AB6741B60268500F701E6 /* ViewControllerRoundStart.m */,
+				CCB67BB91B6B94760001F289 /* ViewControllerRound.h */,
+				CCB67BBA1B6B94760001F289 /* ViewControllerRound.m */,
 			);
 			path = "Daedalus Sentence Companion";
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 			files = (
 				CC6AB6751B60268500F701E6 /* ViewControllerRoundStart.m in Sources */,
 				CCA310811AF5527600ED21DE /* ViewControllerGameStart.m in Sources */,
+				CCB67BBB1B6B94760001F289 /* ViewControllerRound.m in Sources */,
 				CCA3107E1AF5527600ED21DE /* AppDelegate.m in Sources */,
 				CCA3107B1AF5527600ED21DE /* main.m in Sources */,
 			);
